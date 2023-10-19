@@ -5,12 +5,11 @@ import Data from './wine-data.json'
 
 function App() {
 
-    let alc = Data.map((i)=>i.Alcohol) //get all alcohal data in array 
+    let alc = Data.map((i)=>i.Alcohol) //get all alcohol data in array 
     let clases = Array.from(new Set(alc)) //converted array into set to get unique elements
 
     // result --> this variable give the all Flavanoids for a spesific class
     // gamma --> his variable calculate gamma for specific class and return in side an Array
-    console.log(Data.filter((i)=>i.Alcohol== 3).map(a => a.Flavanoids),"alc")
     const mean =( num ,type) => {  //function for calculating mean , passing num for getting specific "Class " nad type for diffrentiating Flavanoids and gamma
       let result = Data.filter((i)=>i.Alcohol== num).map(a => a.Flavanoids);
       let gamma = Data.filter((i)=>i.Alcohol== num).map((i)=> (i.Ash * i.Hue)/i.Magnesium)
@@ -31,14 +30,14 @@ function App() {
         return finalResult.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
       };
 
-      var mode =( num ,type)=> {//function for calculating mode , passing num for getting specific "Class " nad type for diffrentiating Flavanoids and gamma
+      const mode =( num ,type)=> {//function for calculating mode , passing num for getting specific "Class " nad type for diffrentiating Flavanoids and gamma
         let result = Data.filter((i)=>i.Alcohol== num).map(a => a.Flavanoids).slice().sort((x, y) => x - y);
         let gamma = Data.filter((i)=>i.Alcohol== num).map((i)=> (i.Ash * i.Hue)/i.Magnesium)
         let finalResult = type=="Flavanoids"?result:gamma
-        var bestStreak = 1;
-        var bestElem = finalResult[0];
-        var currentStreak = 1;
-        var currentElem = finalResult[0];
+        let bestStreak = 1;
+        let bestElem = finalResult[0];
+        let currentStreak = 1;
+        let currentElem = finalResult[0];
       
         for (let i = 1; i < finalResult.length; i++) {
           if (finalResult[i-1] !== finalResult[i]) {
