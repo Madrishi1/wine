@@ -1,5 +1,6 @@
 # Output
-![Screenshot (1)](https://github.com/Madrishi1/wine/assets/86431894/41ca98cc-e132-4d90-a453-f29fcbb380f2)
+![Screenshot (1)](https://github.com/Madrishi1/wine/assets/86431894/b45deb5e-f2b0-4a0c-89f8-2fb027a1484a)
+
 
 
 # Getting Started with Create React App
