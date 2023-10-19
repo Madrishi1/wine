@@ -1,0 +1,26 @@
+.flavanoid {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 100px;
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+
+.gamma {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 100px;
+
+}
