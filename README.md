@@ -1,3 +1,7 @@
+# Output
+![Screenshot (1)](https://github.com/Madrishi1/wine/assets/86431894/41ca98cc-e132-4d90-a453-f29fcbb380f2)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
